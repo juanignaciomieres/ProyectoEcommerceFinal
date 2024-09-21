@@ -1,0 +1,13 @@
+ //ESTILOS RESET Y QUERIES
+ @import "formatos/reset";
+ @import "formatos/breackpoint";
+//ESTILOS HTML
+ @import "formatos/header";
+ @import "formatos/footer";
+ @import "formatos/body";
+// PAGES
+@import "formatos/inicio";
+@import "contacto/contacto";
+@import "ofertas/ofertas";
+@import "productos/productos";
+@import "sobrenosotros/sobrenosotros";

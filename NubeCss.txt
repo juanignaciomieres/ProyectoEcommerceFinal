@@ -1,0 +1,474 @@
+   /* 
+   !important
+   ID= Selector de Padre
+   Class= Selector de contenido
+ */ 
+    
+    
+    * 
+    {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none !important;
+    font-family: solway;
+    }   
+
+    body
+    {
+    max-width: 1920px;
+    background-color: white;
+    }
+      
+    
+    ul li 
+    {
+    list-style: none; 
+    display: inline-block;
+    }
+    
+    /*ESTILO DE BARRA DE NAVEGACION*/
+    
+    #header
+    {
+    width:100%;
+    height: 70px;
+    }
+
+    #navBar
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0 50px;
+        background-color: rgb(206, 206, 206);
+        /*ALINEA HORIZONTALMENTE*/
+        justify-content: space-between;
+        /*ALINEA VERTICALMENTE*/
+        align-items: center;
+    }
+    
+    .navbar-brand img
+    {
+    margin: 20px 10px;
+    width: 100px;
+    height: 100px;
+    }
+
+    #navBar ul li a {
+        font-size: 18px;
+        color: black;
+        align-items: center;
+        justify-content: space-between;
+        transition: .5s;
+    }
+
+    #navBar ul li a:hover{
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 3px;
+        padding-right: 3px;
+        border-radius: 15px;
+        box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.228);
+        transition: .5s;
+    }
+
+    #navBar ul li:nth-child(1) a:hover {
+        background-color: rgba(0, 0, 0, 0.442);
+        color: rgba(255, 255, 255, 0.82);
+        text-align: center;
+        border-radius: 5px;
+        transition: .5s;
+    }
+
+    /* MAIN */
+    #main { 
+        margin: 0px;
+        min-height: 100vh;
+    }
+
+    .alert {
+    padding-left: 350px;
+    color: rgba(0, 0, 0, 0.662);
+    background-color: rgba(0, 0, 0, 0.938);
+    }
+    
+
+    /*Primer Portada*/
+    .carousel-inner img
+    {
+    width: 100%;
+    height: 250px;
+    }
+    
+    .carousel-caption h5
+    {
+    background-color: rgba(0, 0, 0, 0.571);
+    color: white;
+    }
+
+    .carousel-caption p
+    {
+    background-color: rgba(0, 0, 0, 0.571);
+    color: rgba(255, 255, 255, 0.598);
+    }
+
+    #main .OfertasAll a
+    {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 25px;     
+        padding: 0 100px;
+        transition: .5s;
+    }
+
+    .OfertasAll a:hover{
+        background-color: rgba(0, 0, 0, 0.048);
+        padding-bottom: 5px;
+        padding-right: 5px;
+        border-radius: 25px;
+        box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.228);
+        transition: .5s;
+    }  
+
+    .ofertas-inicio
+    {
+    text-align: center;
+    place-items: center;
+    margin: 20px auto;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    }
+
+    .ofertas-inicio img 
+    {
+    width: 250px;
+    height: 250px;
+    }
+
+    .ofertas-inicio a
+    {
+    color: black;
+    font-size: 20px;
+    }
+
+    .ofertas-inicio a:hover
+    {
+    color: rgb(115, 115, 115);
+    }
+        
+    /*FOOTER*/
+    
+    #footer 
+    {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
+    align-items: center;
+    padding: 20px 0;
+    }
+
+    .footer_logo img
+    {
+    width: 50px;
+    height: 50px;
+    margin: auto 120px;
+    filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+    }
+
+    .footer_links a
+    {
+        display: flex;
+        flex-direction: column;      
+        justify-content: center; 
+        color: rgb(92, 92, 92);
+        font-size: 20px;
+        margin: auto 120px;
+        transition: .5s;
+    }
+
+    .footer_links a:hover
+    {
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    }
+
+
+    .footer_redes a
+    {
+        font-size: 30px;
+        color: black;
+        margin: auto 30px;
+        border: 2px gray;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .footer_redes a
+    {
+    transition: .5s;
+    }
+
+    .footer_redes a:hover
+    {
+    filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+    transition: .5s;
+    }
+
+    /*CONTACTO*/
+    #main_contacto
+    {
+    color: black;  
+    background-color: rgb(202, 202, 202);
+    }
+    
+    
+    .portadaContacto
+    {
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    width: 100%;
+    }
+
+    .contacPromo
+    {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    .contacPromo h1{
+    border: 2px solid rgb(177, 177, 177);
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+    }
+    
+    .contacPromo h1:hover
+    {
+        filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+        background-color: white;
+    color: black;
+    transition: .5s;
+    }
+
+    #form_contacto 
+    {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+    }
+
+    #enviar
+    {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+    }
+
+    #enviar:hover
+    {
+    color: white;
+    background-color: black;
+    transition: 1s;
+    font-size: 15px;
+    }
+    
+    /*SOBRE NOSOTROS*/
+
+    #mainNosotros
+    {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 450px;
+    background-color: grey;
+    }
+    .nosotrosTexto 
+    {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+
+    .nosotrosMap
+    {
+    display: flex;
+    width: 50%;
+    margin: 20px;
+    }
+
+     /*OFERTAS*/
+    
+    #main--Of{
+    min-height: 100vh;
+    height: 1000px;
+    }
+    
+    .alert
+    {
+    background-color: rgba(92, 92, 92, 0.2) !important;
+    padding-left: 500px;
+    margin: 20px 10px;
+    height: 50px;
+    }
+    
+    #ofertasImagenes
+    {
+    width: 1024px;
+    height: 100vh;
+    margin: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    
+               /*COL1  COL2  COL3    COL4*/
+    /*FILA1*/  "campw campgr campbl campgrey"
+    /*FILA2*/  
+    
+    ;
+    column-gap: 50px;
+    row-gap: 20px;
+    }
+
+    #ofertasImagenes img
+    {
+    border: 0.5px solid rgba(0, 0, 0, 0.528);
+    width: 100%;
+    height: 300px;
+    }
+
+    .img1 
+     {
+    grid-area: campw;
+     }
+
+    .img2
+     {
+    grid-area: campgr;
+     }
+
+    .img3
+     {
+    grid-area:campbl;
+     }
+
+    .img4 {
+    grid-area: campgrey;
+    }
+
+    #ofertasImagenes div button{
+    background-color: rgba(0, 0, 0, 0.431) !important;
+    color: white !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    transition: .5s !important;
+    }
+
+    #ofertasImagenes div button:hover {
+    transition: .5s !important;
+    border-radius: 15px !important;
+    background-color: black !important;
+    color: white !important;
+    }
+
+
+    
+    @media screen and (max-width: 1024px) {
+        #imagenes {
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(4 ,150px);
+        grid-template-areas: 
+        
+                   /*COL1  
+        /*FILA1*/  "campw"
+        /*FILA2*/  "campgr"  
+        /*FILA3*/  "campbl"
+        /*FILA4*/  "campgrey"
+        }
+         
+        }
+        
+        @media screen and (max-width: 480px) {
+        #footer {
+        flex-direction: column;
+        text-align: center;
+        }
+    
+        #footer div {
+        margin-top: 15px;
+        }
+       }
+       /*PRODUCTOS*/
+
+       .navbar {
+        width: 100%;
+        height: 150px;
+        
+       }
+
+       .navbar-brand img {
+        width: 60px !important;
+        height: 60px !important;
+       }
+
+       .navbar-brand p {
+        display: inline;
+        font-size: 30px;
+        align-items: center;
+       }
+
+       .caterogorias-Text{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+       }
+       
+       .categorias a {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        color: black;
+        display: inline;
+      
+       }
+       .categorias img
+       {
+        width: 200px !important;
+        height: 200px !important;
+        display: inline !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        margin: 20px 0px;
+        border: 1px solid black;
+        margin-left: 150px;
+       }
+
+       .card-group
+
+       {
+        margin: 20px 10px;
+       }
+
+       
+

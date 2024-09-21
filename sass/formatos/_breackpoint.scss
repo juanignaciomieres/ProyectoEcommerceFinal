@@ -1,0 +1,16 @@
+@media screen and (max-width: 1024px) {
+	#imagenes {
+		grid-template-columns: repeat(1fr);
+		grid-template-rows: repeat(4 ,150px);
+		grid-template-areas: "campw"  "campgr"  "campbl"  "campgrey";
+	}
+}
+@media screen and (max-width: 480px) {
+	#footer {
+		flex-direction: column;
+		text-align: center;
+		div {
+			margin-top: 15px;
+		}
+	}
+}

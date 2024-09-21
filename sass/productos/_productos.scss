@@ -1,0 +1,33 @@
+.navbar {
+	width: 100%;
+	height: 150px;
+}
+
+.caterogorias-Text {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.categorias {
+	a {
+		width: 100%;
+		margin: 0 auto;
+		font-size: 20px;
+		color: $color_1;
+		display: inline;
+	}
+	img {
+		width: 200px !important;
+		height: 200px !important;
+		display: inline !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		margin: 20px 0px;
+		border: 1px solid black;
+		margin-left: 150px;
+	}
+}
+.card-group {
+	margin: 20px 10px;
+}
+
