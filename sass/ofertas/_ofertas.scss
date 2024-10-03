@@ -8,12 +8,16 @@
 	grid-template-areas: "campw campgr campbl campgrey";
 	column-gap: 50px;
 	row-gap: 20px;
+	transition-duration: 1s;
+	transition-property: transform;
+	
 	img {
 		border: 0.5px solid rgba(0, 0, 0, 0.528);
 		width: 100%;
 		height: 300px;
 	}
 	div {
+
 		button {
 			background-color: $background-color_13 !important;
 			color: $color_4 !important;
@@ -30,8 +34,8 @@
 	}
 }
 .img1 {
-	grid-area: campw;
-}
+	grid-area: campw; 
+	}
 .img2 {
 	grid-area: campgr;
 }
@@ -39,5 +43,12 @@
 	grid-area: campbl;
 }
 .img4 {
-	grid-area: campgrey;
+	grid-area: campgrey;	
+}
+
+.tommy {
+	img {
+	width: 100px;
+	height: 100px;
+	}
 }
