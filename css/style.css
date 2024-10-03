@@ -180,6 +180,19 @@ body {
   color: rgb(115, 115, 115);
 }
 
+.navbar-brand img {
+  margin: 20px 10px;
+  width: 100px;
+  height: 100px;
+  width: 60px;
+  height: 60px;
+}
+.navbar-brand p {
+  display: inline;
+  font-size: 30px;
+  align-items: center;
+}
+
 #main_contacto {
   color: black;
   background-color: rgb(202, 202, 202);
@@ -240,6 +253,62 @@ body {
   font-size: 15px;
 }
 
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 206, 206);
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer_logo img {
+  width: 50px;
+  height: 50px;
+  margin: auto 120px;
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+}
+
+.footer_links a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(92, 92, 92);
+  font-size: 20px;
+  margin: auto 120px;
+  transition: 0.5s;
+}
+.footer_links a:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.footer_redes a {
+  font-size: 30px;
+  color: black;
+  margin: auto 30px;
+  border: 2px gray;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.footer_redes a:hover {
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+  transition: 0.5s;
+}
+
+.navbar-brand img {
+  margin: 20px 10px;
+  width: 100px;
+  height: 100px;
+  width: 60px !important;
+  height: 60px !important;
+}
+.navbar-brand p {
+  display: inline;
+  font-size: 30px;
+  align-items: center;
+}
+
 #ofertasImagenes {
   width: 1024px;
   height: 100vh;
@@ -250,6 +319,8 @@ body {
   grid-template-areas: "campw campgr campbl campgrey";
   column-gap: 50px;
   row-gap: 20px;
+  transition-duration: 1s;
+  transition-property: transform;
 }
 #ofertasImagenes img {
   border: 0.5px solid rgba(0, 0, 0, 0.528);
@@ -286,9 +357,65 @@ body {
   grid-area: campgrey;
 }
 
-.navbar {
-  width: 100%;
-  height: 150px;
+.tommy img {
+  width: 100px;
+  height: 100px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 206, 206);
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer_logo img {
+  width: 50px;
+  height: 50px;
+  margin: auto 120px;
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+}
+
+.footer_links a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(92, 92, 92);
+  font-size: 20px;
+  margin: auto 120px;
+  transition: 0.5s;
+}
+.footer_links a:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.footer_redes a {
+  font-size: 30px;
+  color: black;
+  margin: auto 30px;
+  border: 2px gray;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.footer_redes a:hover {
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+  transition: 0.5s;
+}
+
+.navbar-brand img {
+  margin: 20px 10px;
+  width: 100px;
+  height: 100px;
+  width: 60px !important;
+  height: 60px !important;
+}
+.navbar-brand p {
+  display: inline;
+  font-size: 30px;
+  align-items: center;
 }
 
 .caterogorias-Text {
@@ -319,6 +446,62 @@ body {
   margin: 20px 10px;
 }
 
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 206, 206);
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer_logo img {
+  width: 50px;
+  height: 50px;
+  margin: auto 120px;
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+}
+
+.footer_links a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(92, 92, 92);
+  font-size: 20px;
+  margin: auto 120px;
+  transition: 0.5s;
+}
+.footer_links a:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.footer_redes a {
+  font-size: 30px;
+  color: black;
+  margin: auto 30px;
+  border: 2px gray;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.footer_redes a:hover {
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+  transition: 0.5s;
+}
+
+.navbar-brand img {
+  margin: 20px 10px;
+  width: 100px;
+  height: 100px;
+  width: 60px !important;
+  height: 60px !important;
+}
+.navbar-brand p {
+  display: inline;
+  font-size: 30px;
+  align-items: center;
+}
+
 #mainNosotros {
   display: flex;
   justify-content: space-around;
@@ -343,6 +526,49 @@ body {
 #main--Of {
   min-height: 100vh;
   height: 1000px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 206, 206);
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer_logo img {
+  width: 50px;
+  height: 50px;
+  margin: auto 120px;
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+}
+
+.footer_links a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(92, 92, 92);
+  font-size: 20px;
+  margin: auto 120px;
+  transition: 0.5s;
+}
+.footer_links a:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.footer_redes a {
+  font-size: 30px;
+  color: black;
+  margin: auto 30px;
+  border: 2px gray;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.footer_redes a:hover {
+  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
