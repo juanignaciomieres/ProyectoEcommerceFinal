@@ -24,20 +24,38 @@
 		font-size: 20px;
 		color: $color_1;
 		display: inline;
+		&:hover {
+			color: $color_6;
+		}
 	}
 	img {
-		width: 200px !important;
-		height: 200px !important;
-		display: inline !important;
-		align-items: center !important;
-		justify-content: space-between !important;
+		width: 200px;
+		height: 200px;
+		display: inline;
+		align-items: center;
+		justify-content: space-between;
 		margin: 20px 0px;
-		border: 1px solid black;
 		margin-left: 150px;
+		box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+		transition: height 2s, width 1s;
+		&:hover {
+			height: 250px; width: 250px;
+			border: 1px solid black;
+		}
 	}
 }
+
 .card-group {
+	text-align: center;
 	margin: 20px 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	p {
+		text-align: center;
+	}
+	.text-body-secondary {
+		font-size: 20px;
+		
+	}
 }
 
 

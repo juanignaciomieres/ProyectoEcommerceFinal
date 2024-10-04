@@ -296,19 +296,6 @@ body {
   transition: 0.5s;
 }
 
-.navbar-brand img {
-  margin: 20px 10px;
-  width: 100px;
-  height: 100px;
-  width: 60px !important;
-  height: 60px !important;
-}
-.navbar-brand p {
-  display: inline;
-  font-size: 30px;
-  align-items: center;
-}
-
 #ofertasImagenes {
   width: 1024px;
   height: 100vh;
@@ -319,13 +306,17 @@ body {
   grid-template-areas: "campw campgr campbl campgrey";
   column-gap: 50px;
   row-gap: 20px;
-  transition-duration: 1s;
-  transition-property: transform;
 }
 #ofertasImagenes img {
-  border: 0.5px solid rgba(0, 0, 0, 0.528);
-  width: 100%;
-  height: 300px;
+  border: 1px solid rgba(63, 63, 63, 0.528);
+  width: 250px;
+  height: 250px;
+  transition: height 1s, width 0.5s;
+}
+#ofertasImagenes img:hover {
+  height: 280px;
+  width: 280px;
+  border: 2px solid black;
 }
 #ofertasImagenes div button {
   background-color: rgba(0, 0, 0, 0.431) !important;
@@ -357,52 +348,28 @@ body {
   grid-area: campgrey;
 }
 
-.tommy img {
-  width: 100px;
-  height: 100px;
-}
-
-#footer {
+.sale {
   display: flex;
   justify-content: center;
-  background-color: rgb(206, 206, 206);
   align-items: center;
-  padding: 20px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
-
-.footer_logo img {
-  width: 50px;
-  height: 50px;
-  margin: auto 120px;
-  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+.sale img {
+  width: 300px;
+  height: 300px;
 }
-
-.footer_links a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgb(92, 92, 92);
+.sale h3 {
   font-size: 20px;
-  margin: auto 120px;
-  transition: 0.5s;
+  text-align: left;
 }
-.footer_links a:hover {
-  color: rgb(0, 0, 0);
-  transition: 0.5s;
+.sale p {
+  font-size: 15px;
+  text-align: left;
 }
-
-.footer_redes a {
-  font-size: 30px;
-  color: black;
-  margin: auto 30px;
-  border: 2px gray;
-  border-radius: 10px;
-  padding: 5px;
-  transition: 0.5s;
-}
-.footer_redes a:hover {
-  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
-  transition: 0.5s;
+.sale a {
+  font-size: 20px;
+  text-align: center;
 }
 
 .navbar-brand img {
@@ -431,19 +398,36 @@ body {
   color: black;
   display: inline;
 }
+.categorias a:hover {
+  color: rgb(115, 115, 115);
+}
 .categorias img {
-  width: 200px !important;
-  height: 200px !important;
-  display: inline !important;
-  align-items: center !important;
-  justify-content: space-between !important;
+  width: 200px;
+  height: 200px;
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
   margin: 20px 0px;
-  border: 1px solid black;
   margin-left: 150px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: height 2s, width 1s;
+}
+.categorias img:hover {
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
 }
 
 .card-group {
+  text-align: center;
   margin: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-group p {
+  text-align: center;
+}
+.card-group .text-body-secondary {
+  font-size: 20px;
 }
 
 #footer {

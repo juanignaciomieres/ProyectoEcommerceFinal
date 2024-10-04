@@ -1,17 +1,3 @@
-.navbar-brand {
-	img {
-		margin: 20px 10px;
-		width: 100px;
-		height: 100px;
-		width: 60px !important;
-		height: 60px !important;
-	}
-	p {
-		display: inline;
-		font-size: 30px;
-		align-items: center;
-	}
-}
 #ofertasImagenes {
 	width: 1024px;
 	height: 100vh;
@@ -22,13 +8,16 @@
 	grid-template-areas: "campw campgr campbl campgrey";
 	column-gap: 50px;
 	row-gap: 20px;
-	transition-duration: 1s;
-	transition-property: transform;
 	
 	img {
-		border: 0.5px solid rgba(0, 0, 0, 0.528);
-		width: 100%;
-		height: 300px;
+		border: 1px solid rgba(63, 63, 63, 0.528);
+		width: 250px;
+		height: 250px;
+		transition: height 1s, width 0.5s;
+		&:hover {
+			height: 280px; width: 280px;
+			border: 2px solid black;
+		}
 	}
 	div {
 
@@ -60,56 +49,27 @@
 	grid-area: campgrey;	
 }
 
-.tommy {
-	img {
-	width: 100px;
-	height: 100px;
-	}
-}
+.sale {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+box-sizing: border-box;
 
-
-#footer {
-	display: flex;
-	justify-content: center;
-	background-color: $background-color_2;
-	align-items: center;
-	padding: 20px 0;
+img {
+	width: 300px;
+	height: 300px;
 }
-.footer_logo {
-	img {
-		width: 50px;
-		height: 50px;
-		margin: auto 120px;
-		filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
-	}
+h3 {
+	font-size: 20px;
+	text-align: left;
 }
-.footer_links {
-	a {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		color: $color_7;
-		font-size: 20px;
-		margin: auto 120px;
-		transition: .5s;
-		&:hover {
-			color: $color_8;
-			transition: .5s;
-		}
-	}
+p {
+	font-size: 15px;
+	text-align: left;
 }
-.footer_redes {
-	a {
-		font-size: 30px;
-		color: $color_1;
-		margin: auto 30px;
-		border: 2px gray;
-		border-radius: 10px;
-		padding: 5px;
-		transition: .5s;
-		&:hover {
-			filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
-			transition: .5s;
-		}
-	}
+a {
+	font-size: 20px;
+	text-align: center;
+}
 }
