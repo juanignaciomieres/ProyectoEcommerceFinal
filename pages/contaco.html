@@ -67,30 +67,35 @@
 
     <main id="main_contacto"> <!--ESTRUCTURA 2 (CONTENIDO)-->
 
-        <section class="portadaContacto">
+        <section data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="portadaContacto">
+
             <img src="../images/portada.jpg" alt="portada">
+
         </section>
 
-        <section class="contacPromo">
+        <section data-aos="fade-up" data-aos-duration="3000" class="contacPromo">
 
             <h1>Contacto</h1>
-            <h2>Con tu primera subcripción obtené un 30% de descuento.<h2>
+            <h2 class="animate__animated animate__pulse animate__infinite">Con tu primera subcripción obtené un 30% de
+                descuento.<h2>
 
                     <form id="form_contacto">
                         <label for="nombre">Nombre y apellido:</label>
-                        <input type="text" name="nombre" />
+                        <input class="form-control" type="text" name="nombre" />
                         <label for="correoelectronico">Correo Electronico:</label>
-                        <input type="text" name="nombre" />
+                        <input class="form-control" type="text" name="nombre" />
                         <label for="nombre">Sexo:</label>
-                        <select name="Genero">
+                        <select class="form-control btn btn-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" s name="Genero">
                             <option value="Masculino">Masculino</option>
                             <option value="Femenino">Femenino</option>
                             <option value="Prefiero no decirlo">Prefiero no decirlo</option>
                         </select>
-                        <input id="enviar" type="submit">
+                        <strong><input class="form-control" id="enviar" type="submit"> </strong>
                     </form>
-
         </section>
+
+
 
     </main>
 
@@ -98,14 +103,14 @@
 
         <div class="footer_logo">
 
-            <img src="images/logo.png" alt="logopie">
+            <img src="../images/logo.png" alt="logopie">
 
         </div>
 
         <div class="footer_links">
 
             <ul>
-                <li><a href="pages/sobrenosotros.html">Nosotros</a></li>
+                <li><a href="../pages/sobrenosotros.html">Nosotros</a></li>
             </ul>
         </div>
 
