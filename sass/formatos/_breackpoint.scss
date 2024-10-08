@@ -5,12 +5,34 @@
 		grid-template-areas: "campw"  "campgr"  "campbl"  "campgrey";
 	}
 }
+
 @media screen and (max-width: 480px) {
 	#footer {
-		flex-direction: column;
-		text-align: center;
+		flex-wrap: wrap;
+		text-align: start;
 		div {
-			margin-top: 15px;
-		}
+			margin-top: 10px; }
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.alert {
+	padding: 0;
+	margin: 0;
+	
+	p {
+	text-align: center;
+	}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.ofertas-inicio {
+	flex-wrap: wrap;
+	img {
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	}
 	}
 }
