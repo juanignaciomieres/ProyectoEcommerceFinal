@@ -15,28 +15,10 @@
   font-family: solway;
 }
 
-@media screen and (max-width: 1024px) {
-  #imagenes {
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(4, 150px);
-    grid-template-areas: "campw" "campgr" "campbl" "campgrey";
-  }
-}
-@media screen and (max-width: 480px) {
-  #footer {
-    flex-wrap: wrap;
-    text-align: start;
-  }
-  #footer div {
-    margin-top: 10px;
-  }
-}
 @media screen and (max-width: 480px) {
   .alert {
     padding: 0;
-    margin: 0;
-  }
-  .alert p {
+    margin-left: 0;
     text-align: center;
   }
 }
@@ -44,10 +26,50 @@
   .ofertas-inicio {
     flex-wrap: wrap;
   }
-  .ofertas-inicio img {
+}
+@media screen and (max-width: 480px) {
+  .categorias {
+    margin-left: 0;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+    text-align: center;
+  }
+  .card-group {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  #ofertasImagenes {
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas: "campw" "campgr" "campbl" "campgrey";
+  }
+}
+@media screen and (max-width: 480px) {
+  .sales {
+    margin-left: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacPromo {
+    margin-left: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #mainNosotros {
+    margin-left: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    text-align: center;
   }
 }
 #header {
