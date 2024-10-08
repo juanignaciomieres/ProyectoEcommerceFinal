@@ -1,22 +1,23 @@
 #ofertasImagenes {
-	width: 1024px;
-	height: 100vh;
-	margin: 150px;
+	width: 95%;
+	height: 500px;
 	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 20px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-areas: "campw campgr campbl campgrey";
-	column-gap: 50px;
-	row-gap: 20px;
+	column-gap: 30px;
+	row-gap: 30px;
 	
 	img {
-		border: 1px solid rgba(63, 63, 63, 0.528);
-		width: 250px;
-		height: 250px;
-		transition: height 1s, width 0.5s;
+		width: 260px;
+		height: 260px;
+		transition: height .5s, width .5s;
 		&:hover {
-			height: 280px; width: 280px;
-			border: 2px solid black;
+			transition: .5s;
+			height: 300px; width: 300px;
 		}
 	}
 	div {
@@ -37,39 +38,176 @@
 	}
 }
 .img1 {
+	padding: 15px 10px;
 	grid-area: campw; 
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 	}
 .img2 {
+	padding: 15px 10px;
 	grid-area: campgr;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .img3 {
+	padding: 15px 10px;
 	grid-area: campbl;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .img4 {
-	grid-area: campgrey;	
+	padding: 15px 10px;
+	grid-area: campgrey;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;	
 }
 
-.sale {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
-box-sizing: border-box;
+.sales {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	height: 500px;
+	margin: 50px 15px;
+	column-gap: 30px;
 
-img {
-	width: 300px;
-	height: 300px;
+	h2 {
+	position: absolute;
+	top: 5px; }
+	
+	.sale1 {
+
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	
+		.imghvr-blur {
+		background-color: #252525;
+		}	
+
+		figcaption {
+		background-color: #252525;
+		}
+
+		img {
+		width: 350px;
+		height: 350px;
+		}
+		h3 {
+		font-size: 20px;
+		text-align: left;
+		}
+		p {
+		font-size: 15px;
+		text-align: left;
+		align-items: center;
+		}
+		a {
+		font-size: 20px;
+		color: $color_6;
+		text-align: center;
+		position: relative;
+		&:hover {
+		color:$color_2;
+		}
+		} }
+
+		.sale2 {
+			
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+			.imghvr-blur {
+			background-color: #252525;
+			}	
+	
+			figcaption {
+			background-color: #252525;
+			}
+	
+			img {
+			width: 350px;
+			height: 350px;
+			}
+			h3 {
+			font-size: 20px;
+			text-align: left;
+			}
+			p {
+			font-size: 15px;
+			text-align: left;
+			align-items: center;
+			}
+			a {
+			font-size: 20px;
+			color: $color_6;
+			text-align: center;
+			position: relative;
+			&:hover {
+			color:$color_2;
+			}
+			} }
+
+			.sale3 {
+				
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+				.imghvr-blur {
+				background-color: #252525;
+				}	
+		
+				figcaption {
+				background-color: #252525;
+				}
+		
+				img {
+				width: 350px;
+				height: 350px;
+				}
+				h3 {
+				font-size: 20px;
+				text-align: left;
+				}
+				p {
+				font-size: 15px;
+				text-align: left;
+				align-items: center;
+				}
+				a {
+				font-size: 20px;
+				color: $color_6;
+				text-align: center;
+				position: relative;
+				&:hover {
+				color:$color_2;
+				}
+				} }
+
+				.sale4 {
+
+					box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+					.imghvr-blur {
+					background-color: #252525;
+					}	
+			
+					figcaption {
+					background-color: #252525;
+					}
+			
+					img {
+					width: 350px;
+					height: 350px;
+					}
+					h3 {
+					font-size: 20px;
+					text-align: left;
+					}
+					p {
+					font-size: 15px;
+					text-align: left;
+					align-items: center;
+					}
+					a {
+					font-size: 20px;
+					color: $color_6;
+					text-align: center;
+					position: relative;
+					&:hover {
+					color:$color_2;
+					}
+					} }
+
 }
-h3 {
-	font-size: 20px;
-	text-align: left;
-}
-p {
-	font-size: 15px;
-	text-align: left;
-}
-a {
-	font-size: 20px;
-	text-align: center;
-}
-}
+

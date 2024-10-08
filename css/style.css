@@ -184,20 +184,38 @@ body {
   color: black;
 }
 
+.portadaContacto h4 {
+  position: absolute;
+  font-size: 40px;
+  top: 50px;
+  left: 30px;
+}
+.portadaContacto p {
+  position: absolute;
+  font-size: 20px;
+  bottom: 5px;
+  left: 30px;
+  word-spacing: 10px;
+}
+.portadaContacto p img {
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+}
 .portadaContacto img {
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 5px 5px;
   height: 280px;
   width: 100%;
   opacity: 1;
-  position: relative;
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .portadaContacto img:hover {
-  opacity: 0.7;
+  opacity: 0.4;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
 }
@@ -264,26 +282,27 @@ body {
 }
 
 #ofertasImagenes {
-  width: 1024px;
-  height: 100vh;
-  margin: 150px;
+  width: 95%;
+  height: 500px;
   display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "campw campgr campbl campgrey";
-  column-gap: 50px;
-  row-gap: 20px;
+  column-gap: 30px;
+  row-gap: 30px;
 }
 #ofertasImagenes img {
-  border: 1px solid rgba(63, 63, 63, 0.528);
-  width: 250px;
-  height: 250px;
-  transition: height 1s, width 0.5s;
+  width: 260px;
+  height: 260px;
+  transition: height 0.5s, width 0.5s;
 }
 #ofertasImagenes img:hover {
-  height: 280px;
-  width: 280px;
-  border: 2px solid black;
+  transition: 0.5s;
+  height: 300px;
+  width: 300px;
 }
 #ofertasImagenes div button {
   background-color: rgba(0, 0, 0, 0.431) !important;
@@ -300,43 +319,165 @@ body {
 }
 
 .img1 {
+  padding: 15px 10px;
   grid-area: campw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .img2 {
+  padding: 15px 10px;
   grid-area: campgr;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .img3 {
+  padding: 15px 10px;
   grid-area: campbl;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .img4 {
+  padding: 15px 10px;
   grid-area: campgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.sale {
+.sales {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  box-sizing: border-box;
+  width: 95%;
+  height: 500px;
+  margin: 50px 15px;
+  column-gap: 30px;
 }
-.sale img {
-  width: 300px;
-  height: 300px;
+.sales h2 {
+  position: absolute;
+  top: 5px;
 }
-.sale h3 {
+.sales .sale1 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sales .sale1 .imghvr-blur {
+  background-color: #252525;
+}
+.sales .sale1 figcaption {
+  background-color: #252525;
+}
+.sales .sale1 img {
+  width: 350px;
+  height: 350px;
+}
+.sales .sale1 h3 {
   font-size: 20px;
   text-align: left;
 }
-.sale p {
+.sales .sale1 p {
   font-size: 15px;
   text-align: left;
+  align-items: center;
 }
-.sale a {
+.sales .sale1 a {
   font-size: 20px;
+  color: rgb(115, 115, 115);
   text-align: center;
+  position: relative;
+}
+.sales .sale1 a:hover {
+  color: rgba(255, 255, 255, 0.82);
+}
+.sales .sale2 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sales .sale2 .imghvr-blur {
+  background-color: #252525;
+}
+.sales .sale2 figcaption {
+  background-color: #252525;
+}
+.sales .sale2 img {
+  width: 350px;
+  height: 350px;
+}
+.sales .sale2 h3 {
+  font-size: 20px;
+  text-align: left;
+}
+.sales .sale2 p {
+  font-size: 15px;
+  text-align: left;
+  align-items: center;
+}
+.sales .sale2 a {
+  font-size: 20px;
+  color: rgb(115, 115, 115);
+  text-align: center;
+  position: relative;
+}
+.sales .sale2 a:hover {
+  color: rgba(255, 255, 255, 0.82);
+}
+.sales .sale3 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sales .sale3 .imghvr-blur {
+  background-color: #252525;
+}
+.sales .sale3 figcaption {
+  background-color: #252525;
+}
+.sales .sale3 img {
+  width: 350px;
+  height: 350px;
+}
+.sales .sale3 h3 {
+  font-size: 20px;
+  text-align: left;
+}
+.sales .sale3 p {
+  font-size: 15px;
+  text-align: left;
+  align-items: center;
+}
+.sales .sale3 a {
+  font-size: 20px;
+  color: rgb(115, 115, 115);
+  text-align: center;
+  position: relative;
+}
+.sales .sale3 a:hover {
+  color: rgba(255, 255, 255, 0.82);
+}
+.sales .sale4 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sales .sale4 .imghvr-blur {
+  background-color: #252525;
+}
+.sales .sale4 figcaption {
+  background-color: #252525;
+}
+.sales .sale4 img {
+  width: 350px;
+  height: 350px;
+}
+.sales .sale4 h3 {
+  font-size: 20px;
+  text-align: left;
+}
+.sales .sale4 p {
+  font-size: 15px;
+  text-align: left;
+  align-items: center;
+}
+.sales .sale4 a {
+  font-size: 20px;
+  color: rgb(115, 115, 115);
+  text-align: center;
+  position: relative;
+}
+.sales .sale4 a:hover {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .navbar-brand img {
@@ -442,79 +583,69 @@ body {
 
 #mainNosotros {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 450px;
-}
-
-.nosotrosTexto {
-  margin: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.nosotros--texto {
-  font-family: solway;
-  font-size: 10px;
-  margin: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.nosotrosMap {
-  display: flex;
-  width: 50%;
-  margin: 20px;
-}
-
-#main--Of {
-  min-height: 100vh;
-  height: 1000px;
-}
-
-#footer {
-  display: flex;
   justify-content: center;
-  background-color: rgb(206, 206, 206);
   align-items: center;
-  padding: 20px 0;
+  width: 100%;
+  height: 600px;
+  font-family: solway;
 }
-
-.footer_logo img {
-  width: 50px;
-  height: 50px;
-  margin: auto 120px;
-  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+#mainNosotros .card-nosotrosTexto {
+  width: 50%;
+  font-size: 18px;
+  margin: 0 100px;
+  padding: 10px 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
-
-.footer_links a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgb(92, 92, 92);
-  font-size: 20px;
-  margin: auto 120px;
-  transition: 0.5s;
+#mainNosotros .card-nosotrosTexto:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.footer_links a:hover {
-  color: rgb(0, 0, 0);
-  transition: 0.5s;
+#mainNosotros .card-nosotrosTexto .card-title {
+  font-size: 22px;
+  padding: 5px 0;
 }
-
-.footer_redes a {
-  font-size: 30px;
-  color: black;
-  margin: auto 30px;
-  border: 2px gray;
-  border-radius: 10px;
-  padding: 5px;
-  transition: 0.5s;
+#mainNosotros .card-nosotrosTexto .card-title img {
+  width: 45px;
+  height: 45px;
 }
-.footer_redes a:hover {
-  filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
-  transition: 0.5s;
+#mainNosotros .card-nosotrosTexto img {
+  height: 300px;
+}
+#mainNosotros .nosotrosMap {
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  margin: 0px 100px;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+#mainNosotros .nosotrosMap:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#mainNosotros .nosotrosMap h4 {
+  font-size: 19px;
+}
+#mainNosotros .nosotrosMap h4 img {
+  width: 20px;
+  height: 30px;
+}
+#mainNosotros .nosotrosMap p {
+  font-size: 18px;
+}
+#mainNosotros .nosotrosMap img {
+  width: 40px;
+  height: 40px;
+}
+#mainNosotros .nosotrosMap iframe {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 /*# sourceMappingURL=style.css.map */
